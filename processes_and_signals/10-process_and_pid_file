@@ -9,8 +9,8 @@ function remove() {
 	exit
 }
 
-trap "echo I hate the kill command;love" SIGTERM
-trap "echo Y U no love me?!;love" SIGINT
+trap "echo I hate the kill command;remove" SIGTERM
+trap "echo Y U no love me?!;remove" SIGINT
 
 echo $$ >> /var/run/myscript.pid
 while true
